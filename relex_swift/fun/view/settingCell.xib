@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="settingCell" customModule="relex_swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funImg" translatesAutoresizingMaskIntoConstraints="NO" id="ozp-Rh-enU">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1kU-lS-zcY"/>
+                            <constraint firstAttribute="width" constant="30" id="DF6-jH-QQO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9K-gv-jTX">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ozp-Rh-enU" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-10" id="83V-xf-oRH"/>
+                <constraint firstItem="y9K-gv-jTX" firstAttribute="top" secondItem="ozp-Rh-enU" secondAttribute="bottom" constant="7" id="M6K-Jf-qC1"/>
+                <constraint firstAttribute="trailing" secondItem="y9K-gv-jTX" secondAttribute="trailing" id="ale-MV-Z1p"/>
+                <constraint firstItem="ozp-Rh-enU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fg1-ok-Kjd"/>
+                <constraint firstItem="y9K-gv-jTX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yr6-nA-UaB"/>
+            </constraints>
+            <size key="customSize" width="90" height="89"/>
+            <connections>
+                <outlet property="iconView" destination="ozp-Rh-enU" id="goD-Qh-ztm"/>
+                <outlet property="titleLable" destination="y9K-gv-jTX" id="Pig-4a-Kqq"/>
+            </connections>
+            <point key="canvasLocation" x="-382" y="-76.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="funImg" width="128" height="128"/>
+    </resources>
+</document>

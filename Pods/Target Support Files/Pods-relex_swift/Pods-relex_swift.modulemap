@@ -1,0 +1,6 @@
+framework module Pods_relex_swift {
+  umbrella header "Pods-relex_swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

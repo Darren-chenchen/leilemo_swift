@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="cellBottomView" customModule="relex_swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qma-Hl-aMX">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="加入收藏" image="fav">
+                        <color key="titleColor" red="0.78039215689999997" green="0.20392156859999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickFavButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="bNv-oo-9PE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYD-15-zCa">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="分享" image="share">
+                        <color key="titleColor" red="0.78039215689999997" green="0.20392156859999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickShareBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="qsJ-o8-l3U"/>
+                    </connections>
+                </button>
+                <view alpha="0.029999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCJ-OT-uA2">
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="aK8-hv-shd"/>
+                    </constraints>
+                </view>
+                <view alpha="0.029999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhL-UF-gYs">
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BEp-2P-EhZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QhL-UF-gYs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0Gj-VG-rqv"/>
+                <constraint firstAttribute="trailing" secondItem="WYD-15-zCa" secondAttribute="trailing" id="J7z-I0-beH"/>
+                <constraint firstItem="iCJ-OT-uA2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="Kz7-kX-OWx"/>
+                <constraint firstAttribute="bottom" secondItem="Qma-Hl-aMX" secondAttribute="bottom" id="O3k-1H-S9C"/>
+                <constraint firstAttribute="bottom" secondItem="iCJ-OT-uA2" secondAttribute="bottom" constant="3" id="Rbf-aH-xaB"/>
+                <constraint firstItem="WYD-15-zCa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UAn-1x-WHu"/>
+                <constraint firstAttribute="bottom" secondItem="WYD-15-zCa" secondAttribute="bottom" id="UvP-7B-S1b"/>
+                <constraint firstItem="Qma-Hl-aMX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YkD-f4-7fg"/>
+                <constraint firstItem="WYD-15-zCa" firstAttribute="leading" secondItem="iCJ-OT-uA2" secondAttribute="trailing" id="hjS-aF-K9C"/>
+                <constraint firstItem="QhL-UF-gYs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jZs-nz-Kwh"/>
+                <constraint firstItem="iCJ-OT-uA2" firstAttribute="leading" secondItem="Qma-Hl-aMX" secondAttribute="trailing" id="oMB-hC-VSF"/>
+                <constraint firstItem="iCJ-OT-uA2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sQt-Y5-Fkp"/>
+                <constraint firstAttribute="trailing" secondItem="QhL-UF-gYs" secondAttribute="trailing" id="u04-Bs-WpX"/>
+                <constraint firstItem="Qma-Hl-aMX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ykk-mu-Ogm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-140" y="-85"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fav" width="20" height="20"/>
+        <image name="share" width="20" height="20"/>
+    </resources>
+</document>
